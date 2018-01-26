@@ -2,3 +2,5 @@ node_modules
 css/
 dist/
 .sass-cache
+package-lock.json
+lib/package-lock.json
