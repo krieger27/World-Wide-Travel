@@ -1,11 +1,11 @@
 'use strict';
 
-angular.module("bookApp", ["ngRoute"]);
+angular.module("bookApp", ["ngRoute"])
 .config($routeProvider => {
     $routeProvider
         .when("/", {
             templateUrl: "partials/guides.html",
-            controller: "bookCtrl"
+            controller: "BookCtrl"
         })
         .otherwise("/");
 });

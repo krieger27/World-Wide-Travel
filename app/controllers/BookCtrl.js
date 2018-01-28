@@ -1,9 +1,8 @@
 'use strict';
 
-angular.module("bookApp").controller("bookCtrl", function ($scope, guideFactory) {
-    guideFactory.getGuides()
+angular.module("bookApp").controller("BookCtrl", function ($scope, GuideFactory) {
+    GuideFactory.getGuides()
         .then((guideData) => {
             $scope.allGuides = guideData.data.guides;
-
         });
 });
